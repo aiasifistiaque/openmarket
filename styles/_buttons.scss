@@ -1,0 +1,76 @@
+%button {
+	display: inline;
+	padding: 6px 15px;
+	border-radius: 5px;
+	margin: 5px;
+	transition: 0.2s;
+	border: 1px solid $color-secondary;
+	cursor: pointer;
+	margin: 1.5% 5px;
+
+	p {
+		margin: 0;
+		font-weight: 400;
+	}
+}
+
+.button-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.button-solid {
+	@extend %button;
+	background-color: $color-secondary;
+	color: whitesmoke;
+
+	p {
+		text-align: center;
+		color: white;
+	}
+
+	&:hover {
+		background-color: $color-secondary-dark;
+		color: $color-secondary;
+	}
+}
+
+.button-outlined {
+	@extend %button;
+	background-color: transparent;
+	color: $color-secondary;
+
+	&:hover {
+		background-color: $color-secondary;
+		color: whitesmoke;
+	}
+}
+
+.button-subscribe {
+	@extend %button;
+	background-color: white;
+	color: $color-secondary;
+
+	&:hover {
+		background-color: $color-secondary;
+		color: whitesmoke;
+	}
+}
+
+.sales-button {
+	display: inline-flex;
+	padding: 4px 10px;
+	border-radius: 5px;
+	margin: 10px 0;
+	transition: 0.1s;
+	cursor: pointer;
+	background-color: rgba(crimson, 0.9);
+	color: whitesmoke;
+
+	&:hover {
+		background-color: rgba(crimson, 1);
+		color: $color-secondary;
+	}
+}

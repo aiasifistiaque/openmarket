@@ -1,0 +1,147 @@
+//
+@import './constants.scss';
+@import './buttons.scss';
+@import './header/header';
+@import './header/footer';
+@import './home/details';
+@import './home/hero';
+@import './misc/subscribe';
+@import './misc/feature';
+@import './misc/founder';
+@import './misc/join-team';
+@import './misc/about.scss';
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5rem;
+}
+
+.header-three {
+	font-weight: 400;
+	font-size: 26px;
+	margin: 40px 0;
+	text-align: center;
+	line-height: 2.5rem;
+
+	@media only screen and (max-width: $medium-screen) {
+		font-size: 20px;
+		line-height: 2.2rem;
+	}
+}
+
+.page {
+	min-height: 100vh;
+}
+
+.contact-page {
+	display: flex;
+	flex: 1;
+	background-color: whitesmoke;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	padding: 5%;
+	flex-wrap: wrap;
+
+	.contact-page-image {
+		display: flex;
+		flex: 1.8;
+		height: 100vh;
+		align-items: center;
+		justify-content: center;
+		min-width: 400px;
+	}
+
+	.contact-page-form {
+		display: flex;
+		flex: 1;
+		background-color: white;
+		width: 100%;
+		padding: 3%;
+		border: 1px solid rgba(black, 0.1);
+
+		flex-direction: column;
+		border-radius: 5px;
+		min-width: 400px;
+
+		p {
+			margin: 5px 0;
+			font-size: 16px;
+			color: $color-dark;
+		}
+	}
+}
+
+%input-basic {
+	width: 100%;
+	padding: 8px 10px;
+	border: 1px solid rgba(black, 0.1);
+	border-radius: 5px;
+	margin: 2px 0;
+}
+
+.contact-input {
+	width: 100%;
+	margin: 2% 0;
+
+	p {
+		font-size: 16px;
+		color: $color-dark;
+	}
+
+	input {
+		@extend %input-basic;
+	}
+
+	textarea {
+		@extend %input-basic;
+	}
+}
+
+.pricing-section {
+	padding: 5%;
+
+	@media only screen and(max-width:$medium-screen) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	h3 {
+		font-weight: 400;
+		font-size: 32px;
+		color: whitesmoke;
+
+		@media only screen and(max-width:$medium-screen) {
+			font-size: 25px;
+		}
+	}
+
+	p {
+		color: whitesmoke;
+		font-size: 18px;
+		margin: 5px 0;
+
+		@media only screen and(max-width:$medium-screen) {
+			font-size: 16px;
+		}
+	}
+}
