@@ -73,7 +73,8 @@ p {
 		justify-content: center;
 
 		@media only screen and(max-width:$medium-screen) {
-			min-width: 100px;
+			min-width: 300px;
+			margin: 10px;
 		}
 	}
 
@@ -90,7 +91,8 @@ p {
 		min-width: 400px;
 
 		@media only screen and(max-width:$medium-screen) {
-			min-width: 100px;
+			min-width: 300px;
+			margin: 10px;
 		}
 
 		p {
