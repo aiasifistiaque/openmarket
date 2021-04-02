@@ -67,7 +67,10 @@ p {
 		height: 100vh;
 		align-items: center;
 		justify-content: center;
-		min-width: 400px;
+
+		@media only screen and(max-width:$medium-screen) {
+			min-width: 100px;
+		}
 	}
 
 	.contact-page-form {
@@ -81,6 +84,10 @@ p {
 		flex-direction: column;
 		border-radius: 5px;
 		min-width: 400px;
+
+		@media only screen and(max-width:$medium-screen) {
+			min-width: 100px;
+		}
 
 		p {
 			margin: 5px 0;

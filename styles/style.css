@@ -643,7 +643,12 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 400px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-page .contact-page-image {
+    min-width: 100px;
+  }
 }
 
 .contact-page .contact-page-form {
@@ -663,6 +668,12 @@ p {
           flex-direction: column;
   border-radius: 5px;
   min-width: 400px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-page .contact-page-form {
+    min-width: 100px;
+  }
 }
 
 .contact-page .contact-page-form p {
